@@ -8,14 +8,14 @@
   display: inline-flex;
   }
   
-  .cursor:after {
+
+  
+ :host([cursor]) .cursor:after {
     content: '|';
     animation: cursor 0.5s ease infinite alternate;
-  display: inline-block;
-      transform: translateY(-4px);
-  
+    display: inline-block;
+    transform: translateY(0px) scale(1.3);
   }
-  
   
   .typewriter {
     display: flex;
@@ -36,7 +36,6 @@
   
   <div class="typewriter">
       <span class="cursor"><slot></slot></span>
-  
   </div>
   `;
   
